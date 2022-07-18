@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 300px;
+            height: 400px;
+            border: 2px solid black;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">falador passa mal</div>
+        <div class="item">falador passa mal rapaz</div>
+        <div class="item">falador passa mal</div>
+        <div class="item">chove chuva, chove sem parar</div>
+        <div class="item">hoje eu vou pedir uma prese pra Deus nosso senhor, pra chuva parar</div>
+        <div class="item">falador passa mal</div>
+        <div class="item">se alguem perguntar por mim, diz que fui por ai</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">falador passa mal</div>
+        <div class="item">falador passa mal rapaz</div>
+        <div class="item">falador passa mal</div>
+        <div class="item">chove chuva, chove sem parar</div>
+        <div class="item">hoje eu vou pedir uma prese pra Deus nosso senhor, pra chuva parar</div>
+        <div class="item">falador passa mal</div>
+        <div class="item">se alguem perguntar por mim, diz que fui por ai</div>
+    </div>
+    
+    <p>Flex-Start</p>
+    <div class="container start">
+        <div class="item">falador passa mal</div>
+        <div class="item">falador passa mal rapaz</div>
+        <div class="item">falador passa mal</div>
+        <div class="item">chove chuva, chove sem parar</div>
+        <div class="item">hoje eu vou pedir uma prese pra Deus nosso senhor, pra chuva parar</div>
+        <div class="item">falador passa mal</div>
+        <div class="item">se alguem perguntar por mim, diz que fui por ai</div>
+    </div>
+
+    <p>Flex-End</p>
+    <div class="container end">
+        <div class="item">falador passa mal</div>
+        <div class="item">falador passa mal rapaz</div>
+        <div class="item">falador passa mal</div>
+        <div class="item">chove chuva, chove sem parar</div>
+        <div class="item">hoje eu vou pedir uma prese pra Deus nosso senhor, pra chuva parar</div>
+        <div class="item">falador passa mal</div>
+        <div class="item">se alguem perguntar por mim, diz que fui por ai</div>
+    </div>
+</body>
+</html>
