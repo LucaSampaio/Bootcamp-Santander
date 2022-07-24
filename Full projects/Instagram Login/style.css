@@ -7,7 +7,7 @@
 
 .flex-container{
     background-color: white;
-    width: 365px;
+    width: 350px;
     display: block;
     height: 300px;
     position: absolute;
@@ -18,8 +18,8 @@
 }
 
 .flex-container img{
-    align-self: c;
-    margin-top: 50px;
+    margin-top: 40px;
+    padding-bottom: 20px;
 }
 
 .contas{
@@ -34,7 +34,7 @@
     display: flex;
     padding-left: 50px;
     position: absolute;
-    bottom: 112px;
+    bottom: 118px;
     left: 35px;
     font-size: small;
 }
@@ -60,7 +60,39 @@
 
 }
 
- .phone img{
+.flex-opcoes {
+    background-color: white;
+    width: 350px;
+    height: 70px;
+    position: absolute;
+    top: 392px;
+    left: 640px;
+    border: 1px solid rgb(209, 208, 208);
+}
+
+.flex-opcoes div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: medium;
+    padding-top: 23px;
+}
+.flex-opcoes a{
+    color: rgba(var(--d69,0,149,246),1);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5px;
+}
+
+#entre{
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    font-size: 16px;
+}
+
+.phone img{
     display: flex;
     margin-top: 40px;
     margin-left: 120px;
@@ -88,4 +120,19 @@
     text-decoration: none;
     left: 205px;
     bottom: 21px;
+}
+
+.get {
+    position: absolute;
+    width: 300px;
+    left: 670px;
+    top: 475px;
+}
+
+.get div{
+    font-size: 14px;
+    margin: 14px;
+}
+.get a img{
+    width: 40%;
 }
